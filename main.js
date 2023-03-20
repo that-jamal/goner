@@ -28,12 +28,21 @@ document.body.addEventListener("keypress", function (event) {
 })
 
 const frame = [
-    {//0
-        room: "url('https://cdn.discordapp.com/attachments/678621053026828309/1073160741273731082/image.png')",
-        mapId: 1, rightmapId: 1, leftmapId: 1, backmapId: 1, roomId: "room"
+    {//1
+        room: "url('https://cdn.discordapp.com/attachments/691020853248262184/1087302953666359296/image.png')",
+        mapId: 0, rightmapId: 1, leftmapId: 3, backmapId: 2, roomId: "room 1"
     },
-    {//0
-        room: "url('https://cdn.discordapp.com/attachments/678621053026828309/1073160741273731082/image.png')",
-        mapId: 0, rightmapId: 0, leftmapId: 0, backmapId: 0, roomId: "room"
+    {//2
+        room: "url('https://cdn.discordapp.com/attachments/691020853248262184/1087303612402769941/image.png')",
+        mapId: 0, rightmapId: 2, leftmapId: 0, backmapId: 3, roomId: "room 2"
+    },
+    {//3
+        room: "url('https://cdn.discordapp.com/attachments/691020853248262184/1087303376473169990/image.png')",
+        mapId: 0, rightmapId: 3, leftmapId: 1, backmapId: 0, roomId: "room 3"
+    }, {//4
+        room: "url('https://cdn.discordapp.com/attachments/691020853248262184/1087303191613411418/image.png')",
+        mapId: 0, rightmapId: 0, leftmapId: 2, backmapId: 1, roomId: "room 4"
     },
 ]
+
+Add()
