@@ -1,29 +1,38 @@
 let room = document.body
 let roomName = document.getElementById("roomName")
 let nextId = 0
-
+let time = 10
 function Add() {
     room.style.backgroundImage = frame[nextId].room
-    console.log(nextId)
+    console.log("working")
     //------------------------------------------------------ 
 }
 
 document.body.addEventListener("keypress", function (event) {
-    if (event.key == "w") {
-        nextId = (frame[nextId].mapId)
-        Add()
+
+
+    if (0 == time) {
+        room.style.backgroundImage = "url('END.png')",
+            console.log("starv")
     }
-    if (event.key == "a") {
-        nextId = (frame[nextId].leftmapId)
-        Add()
-    }
-    if (event.key == "s") {
-        nextId = (frame[nextId].backmapId)
-        Add()
-    }
-    if (event.key == "d") {
-        nextId = (frame[nextId].rightmapId)
-        Add()
+    else {
+        time--
+        if (event.key == "w") {
+            nextId = (frame[nextId].mapId)
+            Add()
+        }
+        if (event.key == "a") {
+            nextId = (frame[nextId].leftmapId)
+            Add()
+        }
+        if (event.key == "s") {
+            nextId = (frame[nextId].backmapId)
+            Add()
+        }
+        if (event.key == "d") {
+            nextId = (frame[nextId].rightmapId)
+            Add()
+        }
     }
 })
 
@@ -44,3 +53,5 @@ const frame = [
         mapId: 0, rightmapId: 0, leftmapId: 2, backmapId: 1, roomId: "room 4"
     },
 ]
+
+Add()
