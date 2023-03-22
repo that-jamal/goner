@@ -44,5 +44,3 @@ const frame = [
         mapId: 0, rightmapId: 0, leftmapId: 2, backmapId: 1, roomId: "room 4"
     },
 ]
-
-Add()
